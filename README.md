@@ -1,6 +1,14 @@
 # WHU ZXR - SQLite Enhanced Research Project
 
-本项目是一个基于 SQLite 的深度研究与实验平台，旨在探索 SQLite 在**向量检索（Vector Search）**和**图计算（Graph Computing）**领域的扩展能力与性能优化。项目包含了 SQLite 核心源码、自定义扩展插件（sqlite-vec, sqlite-graph）以及一系列用于性能评估和算法验证的实验脚本。
+本项目是一个基于 SQLite 的深度研究与实验平台，旨在探索 SQLite 在**多模数据处理**领域的扩展能力与性能优化。项目包含了 SQLite 核心源码、扩展件（vec, graph）以及一系列用于性能评估和算法验证的实验脚本。
+
+## 使用指南
+
+- 编译SQLITE
+- 编译扩展件
+- 启动SQLITE后，LOAD需要使用的扩展件
+- 执行测试代码（部分测试代码依赖数据集需自行下载、部分实验已改为随机数据）
+
 
 ## 📂 项目结构
 
@@ -26,3 +34,5 @@
 │   ├── comparison.py       # SQLite vs DuckDB 性能基准测试
 │   └── testsql/            # SQL 测试用例集 (.sql)
 └── README.md               # 项目说明文档
+
+```
